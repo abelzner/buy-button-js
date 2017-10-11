@@ -471,3 +471,38 @@ var DOMEVents = {
   [`click .${this.classes.product.button.split(' ').join('.')}`]: myCallback
 }
 ```
+
+## Hide Buy Button when out of stock
+
+If you want to hide the Add to cart button when you are out of stock, you can add an extra line 
+``` 
+
+":disabled" : { "display": "none" }
+```
+
+This is what the code may look like ( make sure to include the ' , ' after "bold"  : 
+
+```
+ "button": {
+        "background-color": "#a94322",
+        "font-family": "Montserrat, sans-serif",
+        "padding-left": "50px",
+        "padding-right": "50px",
+        ":hover": {
+          "background-color": "#983c1f"
+        },
+        "border-radius": "50px",
+        ":focus": {
+          "background-color": "#983c1f"
+        },
+        "font-weight": "bold",
+        ":disabled" : {
+                                "display": "none" 
+                             }
+
+```
+
+
+
+
+
